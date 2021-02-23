@@ -1,415 +1,210 @@
-@charset "utf-8";
-/* CSS Document */
-
-a,button,div,input,header,footer,section,article,aside,h1,h2,h3,h4,h5,h6,p,ol,ul,li{
-	font-family: "proxima-nova",sans-serif;
-    
+:root {
+  /* Color Variables */
+  --color-grey-dk: rgb(49, 46, 58);
+  --color-grey-lt: rgb(187, 186, 190);
+  --color-white: #fff;
+  --color-primary: #7059f3;
 }
 
-
-h3 {
-	
-	font-weight: 800;
-	
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-.w3-black{
-	
-	background-color:rgba(0, 0, 0, 0.5) !important;
-	
-	
+html {
+  font-family: "proxima-nova", sans-serif;
+  color: var(--color-grey-dk);
+  font-size: 62.5%;
+  width: 100%;
 }
 
-.w3-black-dk{
-	
-	background-color:rgba(0, 0, 0, 0.9) !important;
-	
-	
-}
-#contact{
-	
-	margin-bottom: -50px;
-	
+body {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  position: relative;
 }
 
-.w3-display-bottommiddle{
-	position:absolute;
-	left:0;
-	bottom:0;
-	width:100%;
-	text-align:center;
-	transform:translate(0%,0%);
-	-ms-transform:translate(0%,0%)
-
-}
-	
-
-.hero{
-	
-	height: 900px; 
-	background-image: url("Images/Night_Pier_color.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-    background-position: center;
-	background-size: cover;
-	min-width: 100%;
-	min-height: 100%;
-	
-	
+.heading-1 {
+  font-size: 2.8rem;
 }
 
-.hero-logo{
-	
-	padding-left:3%;
-	margin-bottom: 55px;
-	margin-top: 10px:
-	
+.heading-2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
 }
 
-.nav-item{
-	font-family: "proxima-nova",sans-serif;
-	font-weight: 300;
-	 
-	
-	
+p {
+  margin-bottom: 0.4rem;
 }
 
-
-.page-hero{
-	width:100%; 
-	display:block;
-	
+.nav {
+  height: 8rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem;
+  position: fixed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1.6rem;
+  z-index: 1000;
 }
 
-#about{
-	
-	width:100% !important;
-	
+.nav-logo {
+  width: 31.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
 }
 
-p, li{
-	
-	font-size: 24px;
-    text-align: left;
-	
+.nav-links {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  transform: translateX(-1.5rem);
 }
 
-.page-header-h1{
-	
-	font-weight: 800 !important;
-	
+.nav-links li {
+  padding-left: 3rem;
 }
 
-.page-header-h4{
-	
-	font-weight: 300 !important;
-	text-align:left !important;
-	
-	
+.nav-links a,
+.nav-links a:link,
+.nav-links a:visited {
+  text-decoration: none;
+  color: var(--color-grey-dk);
+  transition: all 0.2s;
 }
 
-
-
-.logo{
-	padding-top:5px!important;
-	position:relative;
-	width: 300px;
-	
-
+.nav-links a:hover,
+.nav-links a:active {
+  color: var(--color-primary);
 }
 
-.headshot {
-	
-	
-	margin-right: 50px;
-	margin-top: 20px;
-	width:30% !important;
-
-	
+.hero {
+  height: 95vh;
+  background: url("img/Night_Pier_color.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
 }
 
-.project-section{
-	
-	margin-top:50px !important;
-	
+.hero-logo {
+  max-width: 50rem;
+  margin-bottom: 5rem;
 }
 
-.video{
-		
-		padding: 0;
-		display:block;
-		vertical-align: top; 
-		margin:30px 1%;
-		width:98%; 		
-	}
-	
-
-
-.content{
-		margin-top:150px;
-		padding-bottom:0px !important;
-		padding-left: 15%;
-		padding-right: 15%;
-		max-width: 1564px;
-		margin-left:auto;
-		margin-right:auto;
-		display:block;
-	}
-.content-home{
-    margin-top: 25px;
+.container {
+  display: grid;
+  grid-template-columns:
+    [full-start]minmax(3rem, max-content) [center-start]repeat(3, 1fr)
+    [center-end]minmax(3rem, max-content) [full-end];
 }
 
-.content h4{
-    margin-top:-100px;
-    text-align:center;
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
+.about,
+.work,
+.contact {
+  grid-column: center-start / center-end;
+  margin-top: 6rem;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid var(--color-grey-lt);
 }
 
-.content p{
-    letter-spacing:normal;
-    font-weight: 400;
+.work-container {
+  display: grid;
+  grid-gap: 0.7rem;
 }
 
-.txt-bold-wht{
-	
-	color: #ffffff;
-	font-size:32px;
-	font-weight: 800;
-	line-height: 44px;
-	text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.5);
-	
+.work-project {
+  height: 30rem;
+  overflow: hidden;
+  object-fit: cover;
+  transition: all 0.2s;
 }
 
-
-footer p{
-    font-size:12px;
-    color:white;
-    text-align: center;
+.work-project:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
-
-
-
-/* MOBILE STYLES */
-@media screen and (max-width: 768px) {
-	.centered{
-		
-		width: 100% !important;
-		max-width: 100% !important;
-		height: auto !important;
-		align: center !important;
-		text-align:center !important;
-		float:none !important;
-		
-	}
-	
-	#home{
-	
-	margin-top: 50px !important;
-	
-	}
-	
-	.hero-mobile{
-		
-		height: 570px !important;
-		background-attachment:scroll;
-		background-position:center;
-		background-image: url("Images/Night_Pier_color.jpg");
-		background-repeat: no-repeat;
-		min-width: 100% !important;
-		min-height: 100% !important;
-		
-	}
-	
-	.nav-item-sm{
-		
-		font-size: 70% !important;
-		float:none !important;
-		text-align:center !important;
-		align:center !important;
-		display: inline-block !important;
-		padding-right:2% !important;
-		padding-left:2% !important;
-		
-	}
-	
-	.logo-small{
-		
-		margin:10px auto 15px auto!important;
-		width: 300px !important;
-	
-	}
-	
-	.headshot {
-	
-		margin: 20px 0 !important;
-		width:100% !important;
-	
-	}
-	
-	.w3-white{
-	
-		background-color:rgba(255, 255, 255, 1) !important;
-	
-	}
-	
-	.unfloat{
-		
-		text-align:center !important;
-		align:center !important;
-	}
-	
-	
-	.w3-hide-small{
-		display:none !important;
-	}
-	
-	.txt-bold-wht{
-		margin-top: 30px !important;
-		font-size:22px;
-		line-height: 30px;
-		
-	}
-	
-
-	
-
+.work-project img {
+  width: 100%;
+  margin: auto 0;
 }
 
-
-/* MOBILE STYLES */
-@media screen and (max-width: 600px) {
-
-	#content{
-		
-		padding-left: 8% !important;
-		padding-right: 8% !important;
-	}
-	
-	#content-hero{
-		
-		margin-top: 0 !important;
-		
-	}
-	
-	.img-max {
-		width: 100% !important;
-		max-width: 100% !important;
-		height: auto !important;
-	}
-	
-	
-	.page-hero-mobile{
-		
-		width: 100% !important;
-		
-	}
-	
-	.page-header-h1{
-	
-		font-weight: 800 !important;
-		font-size:30px;
-		letter-spacing:normal !important;
-		margin-bottom: 40px;
-		margin-top: 00px;
-	
-	}
-
-	.page-header-h4{
-	
-		font-size:16px;
-		letter-spacing:normal !important;
-		font-weight: 500 !important;
-		text-align:left !important;
-	
-		
-	
-	}
-	
-
-	
-	.hide {
-		
-		display:none !important;
-		
-	}
-	
-	
-	.hero-logo{
-		height: auto !important;
-		margin-top: 50px !important;
-		padding-left:3%;
-		width: 320px !important;
-	
-			
-		
-	
-	}
-	
-	.contact-info{
-		
-		font-size:20px !important;
-		text-decoration: none !important;
-		
-	}
-	
-	.contact-info a{
-		
-		font-size:20px !important;
-		text-decoration: none !important;
-		
-	}
-	
-	
-	
-	.w3-display-container-video{
-		
-		
-		width:80% !important;
-		margin-left: 10% !important;
-		margin-right: 10% !important;
-		
-	}
-	
-	
-	
-	.w3-display-middle{
-		
-		width:100% !important;
-	
-	}
-	
-	.video{
-		margin-bottom: -220px !important;
-		margin-top: -180px !important;
-		margin-left: 3% !important;
-		margin-right: 3% !important;
-		width:94% !important;
-		
-		
-		
-	}
-	
+.contact-logo {
+  width: 24rem;
+  margin: 3rem auto -4rem auto;
 }
 
-/* MOBILE STYLES */
-@media screen and (max-width: 340px) {
+.contact-logo img {
+  width: 100%;
+}
 
-	.logo-small{
-		margin:10px auto 15px auto!important;
-		width: 100% !important;
-		
-	}
-	.contact-info{
-		
-		font-size:18px !important;
-		
-	}
+.footer {
+  background-color: var(--color-grey-dk);
+  color: var(--color-white);
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Helper Classes */
+.txt-wht {
+  color: var(--color-white);
+}
+
+/* MEDIA QUERIES */
+
+/* Desktop */
+@media screen and (min-width: 1080px) {
+  .nav {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    width: 35rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+  }
+
+  .nav-links {
+    transform: translateX(0);
+  }
+
+  .container {
+    grid-template-columns:
+      [full-start]minmax(6rem, 1fr) [center-start]repeat(4, 1fr)
+      [center-end]minmax(6rem, 1fr) [full-end];
+  }
+
+  .work-container {
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  }
+
+  .work-project {
+    height: 40rem;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-logo {
+    padding: 0;
+    margin: -10rem 0 -6rem 0;
+  }
 }

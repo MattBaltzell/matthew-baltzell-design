@@ -1,0 +1,19 @@
+{
+  "name": "matthew-baltzell-design",
+  "version": "1.0.0",
+  "description": "Matthew Baltzell Portfolio Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zellified/matthew-baltzell-design.git"
+  },
+  "author": "Matthew Baltzell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zellified/matthew-baltzell-design/issues"
+  },
+  "homepage": "https://github.com/zellified/matthew-baltzell-design#readme"
+}
