@@ -45,7 +45,7 @@ body {
   font-weight: 100;
   margin-bottom: 3rem;
   color: var(--color-white);
-  line-height: 0.85;
+  line-height: 1;
 }
 
 .heading-2 {
@@ -231,7 +231,8 @@ input:focus {
 .about,
 .work,
 .project-gallery,
-.cta {
+.cta,
+.video-section {
   border-bottom: 1px solid var(--color-grey-lt);
 }
 
@@ -241,7 +242,8 @@ input:focus {
 
 .about,
 .work,
-.project-gallery {
+.project-gallery,
+.video-section {
   grid-column: center-start / center-end;
   padding-bottom: 6rem;
 }
@@ -303,6 +305,10 @@ input:focus {
   color: var(--color-white);
 }
 
+.project-hero-dmt {
+  max-height: 90vh;
+}
+
 .project-hero .heading-1 {
   font-size: 3.8rem;
 }
@@ -342,7 +348,34 @@ input:focus {
 .black-book-p1,
 .black-book-p2,
 .black-book-p3,
-.black-book-p4 {
+.black-book-p4,
+.illustration-p1,
+.illustration-p2,
+.illustration-p3,
+.illustration-p4 {
+  height: 60vw;
+}
+
+.illustration-p1 {
+  background: url(../img/illustration_1.jpg);
+}
+
+.illustration-p2 {
+  background: url(../img/illustration_2.jpg);
+  background-position: top !important;
+}
+
+.illustration-p3 {
+  background: url(../img/illustration_3.jpg);
+  background-position: top;
+}
+
+.illustration-p4 {
+  background: url(../img/illustration_4.jpg);
+}
+
+.illustration-p5 {
+  background: url(../img/illustration_5.jpg);
   height: 60vw;
 }
 
@@ -384,6 +417,12 @@ input:focus {
 
 .p5 {
   grid-area: img5;
+}
+
+.video {
+  width: 100%;
+  margin-top: -20rem;
+  margin-bottom: -20rem;
 }
 
 .other-work-container {
@@ -593,8 +632,17 @@ textarea:focus {
   .black-book-p1,
   .black-book-p2,
   .black-book-p3,
-  .black-book-p4 {
-    height: 25vw;
+  .black-book-p4,
+  .illustration-p1,
+  .illustration-p2,
+  .illustration-p3,
+  .illustration-p4 {
+    height: 30vw;
+  }
+
+  .video {
+    margin-top: -20rem;
+    margin-bottom: -20rem;
   }
 }
 
@@ -612,6 +660,11 @@ textarea:focus {
   }
   .project-hero .heading-1 {
     font-size: 6rem;
+  }
+
+  .video {
+    margin-top: -10rem;
+    margin-bottom: -10rem;
   }
 }
 
@@ -657,7 +710,7 @@ textarea:focus {
   .hero-content,
   .project-hero-content {
     grid-column: center-start / center-end;
-    max-width: 50vw;
+    max-width: 60vw;
     padding: 16rem 0rem 10rem 0rem;
   }
 
@@ -686,6 +739,11 @@ textarea:focus {
   .work-container {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .video {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -711,5 +769,14 @@ textarea:focus {
     display: block;
     width: 90rem;
     grid-column-start: 5;
+  }
+  .video {
+    height: 70rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .video {
+    height: 80rem;
   }
 }
