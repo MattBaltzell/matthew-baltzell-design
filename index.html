@@ -39,12 +39,34 @@
     </nav>
 
     <!-- Hero -->
-    <header class="hero" id="home">
+    <!-- <header class="hero" id="home">
       <img src="img/MB_Logo.svg" alt"Matthew Baltzell" class="hero-logo"/>
       <h1 class="heading-1 txt-wht">
         INSPIRED&nbsp;VISION. BOLD&nbsp;DESIGN. AUTHENTIC&nbsp;BRANDING.
       </h1>
-    </header>
+    </header> -->
+
+
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="heading-1">Strive to be more.</h1>
+          <p class="hero-p">Captivate your audience with thoughtful design and messaging. Watch your business grow as we take your marketing to the next level together.</p>
+        </div>
+        <div class="hero-cta">
+          <h3 class="heading-3">Get a FREE 15-minute consultation.</h3>
+          <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" class = "email-capture">
+            <p class="hidden">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+            <input type="email" name="email" placeholder="Your Email"/>
+            <button type="submit" class="btn hero-btn">Submit</button>
+          </form>
+        </div>
+        
+        </div>
+    </div>
+
 
     <!-- CONTAINER -->
 
@@ -112,27 +134,41 @@
       </section>
 
       <!-- Contact Section -->
-      <section class="contact" id="contact">
-        <h2 class="heading-2">GET IN TOUCH</h2>
-        <div class="contact-container">
-          <div class="contact-text">
-            <p>Let's get started on your next project.</p>
-            <p class="">
-              334.595.1451<br />
-              <a
-                href="mailto:matthew@matthew-baltzell.com?subject=Requesting%20Design%20Services"
-                >matthew@matthew-baltzell.com</a
-              >
+      <section class="contact">
+        <div class="form-container">
+          <form
+            name="contact"
+            method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+            class="form"
+          >
+            <p class="hidden">
+              <label
+                >Don’t fill this out if you’re human: <input name="bot-field"
+              /></label>
             </p>
-          </div>
+            <h3 class="heading-3">Get in touch!</h3>
 
-          <div class="contact-logo">
-            <img
-              src="img/MatthewBaltzell_Logo.svg"
-              alt="Matthew Baltzell Design"
-            />
-          </div>
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Your Name" />
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Your Email" />
+
+            <label>Message: </label>
+            <textarea name="message"></textarea>
+
+            <div data-netlify-recaptcha="true"></div>
+
+            <button type="submit" class="btn form-btn">Send</button>
+          </form>
         </div>
+        <img
+          src="https://images.unsplash.com/3/doctype-hi-res.jpg?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1646&q=80"
+          alt="Graphic Designer Workspace"
+          class="contact-image"
+        />
       </section>
     </div>
 
