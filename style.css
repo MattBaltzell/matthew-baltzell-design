@@ -324,6 +324,10 @@ input:focus {
   border-radius: 3px;
 }
 
+.project-img {
+  width: 100%;
+}
+
 .black-book-p1 {
   background: url(../img/black-book_1.jpg);
 }
@@ -388,6 +392,10 @@ input:focus {
   width: 100%;
   background-size: cover;
   background-position: center;
+}
+
+.pg-3 {
+  grid-template-columns: 1fr;
 }
 
 .pg-5 {
@@ -618,6 +626,10 @@ textarea:focus {
     grid-template-columns: 1fr 1fr;
   }
 
+  .pg-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .pg-5 {
     grid-template-areas:
       "img1 img2"
@@ -675,6 +687,10 @@ textarea:focus {
   .project-hero {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .pg-3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
