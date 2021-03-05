@@ -162,13 +162,13 @@ p {
 .hero {
   min-height: 80vh;
   background: linear-gradient(to right bottom, var(--color-g1), var(--color-g2)),
-    url("img/Night_Pier_color.jpg");
+    url("img/Night_Pier_color_small.jpg");
   background-image: linear-gradient(
       to right bottom,
       var(--color-g1),
       var(--color-g2)
     ),
-    url("img/Night_Pier_color.jpg");
+    url("img/Night_Pier_color_small.jpg");
   background-size: cover;
   background-color: var(--color-grey-dk);
   color: var(--color-white);
@@ -741,6 +741,17 @@ textarea:focus {
   .cta {
     height: 20rem;
   }
+  
+  .hero {
+    background: linear-gradient(to right bottom, var(--color-g1), var(--color-g2)),
+    url("img/Night_Pier_color_md.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      var(--color-g1),
+      var(--color-g2)
+    ),
+    url("img/Night_Pier_color_md.jpg");
+  }
 
   .container {
     grid-template-columns:
@@ -920,6 +931,13 @@ textarea:focus {
 @media screen and (min-width: 1200px) {
   .hero-content {
     /* max-width: 60vw; */
+  }
+  
+  .hero {
+    background: linear-gradient(to right bottom, var(--color-g1), var(--color-g2)),
+    url("img/Night_Pier_color.jpg");
+    background-image: linear-gradient(to right bottom, var(--color-g1), var(--color-g2)),
+    url("img/Night_Pier_color.jpg");
   }
 
   .about-text p {
