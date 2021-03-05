@@ -162,10 +162,30 @@ p {
 .hero {
   min-height: 80vh;
   background-color: #dddddd;
-  background-image: -webkit-linear-gradient(to right bottom, rgba(89, 92, 243, 0.8), rgba(100, 199, 169, 0.8)), url("img/Night_Pier_color_small.jpg");
-  background-image: -moz-linear-gradient(to right bottom, rgba(89, 92, 243, 0.8), rgba(100, 199, 169, 0.8)), url("img/Night_Pier_color_small.jpg");
-  background-image: -o-linear-gradient(to right bottom, rgba(89, 92, 243, 0.8), rgba(100, 199, 169, 0.8)), url("img/Night_Pier_color_small.jpg");
-  background-image: linear-gradient(to right bottom, rgba(89, 92, 243, 0.8), rgba(100, 199, 169, 0.8)), url("img/Night_Pier_color_small.jpg");
+  background-image: -webkit-linear-gradient(
+      to right bottom,
+      rgba(89, 92, 243, 0.8),
+      rgba(100, 199, 169, 0.8)
+    ),
+    url("img/Night_Pier_color_small.jpg");
+  background-image: -moz-linear-gradient(
+      to right bottom,
+      rgba(89, 92, 243, 0.8),
+      rgba(100, 199, 169, 0.8)
+    ),
+    url("img/Night_Pier_color_small.jpg");
+  background-image: -o-linear-gradient(
+      to right bottom,
+      rgba(89, 92, 243, 0.8),
+      rgba(100, 199, 169, 0.8)
+    ),
+    url("img/Night_Pier_color_small.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(89, 92, 243, 0.8),
+      rgba(100, 199, 169, 0.8)
+    ),
+    url("img/Night_Pier_color_small.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -407,6 +427,22 @@ input:focus {
 
 .harbri-p4 {
   background: url(../img/harbri-4.jpg);
+}
+
+.entasis-p1 {
+  background: url(../img/entasis-1.jpg);
+}
+
+.entasis-p2 {
+  background: url(../img/entasis-2.jpg);
+}
+
+.entasis-p3 {
+  background: url(../img/entasis-3.jpg);
+}
+
+.entasis-p4 {
+  background: url(../img/entasis-4.jpg);
 }
 
 .omniplan-app-p1 {
@@ -740,12 +776,32 @@ textarea:focus {
   .cta {
     height: 20rem;
   }
-  
+
   .hero {
-    background-image: -webkit-linear-gradient(to right bottom, rgba(89, 92, 243, 0.8), rgba(100, 199, 169, 0.8)), url("img/Night_Pier_color_md.jpg");
-    background-image: -moz-linear-gradient(to right bottom, rgba(89, 92, 243, 0.8), rgba(100, 199, 169, 0.8)), url("img/Night_Pier_color_md.jpg");
-    background-image: -o-linear-gradient(to right bottom, rgba(89, 92, 243, 0.8), rgba(100, 199, 169, 0.8)), url("img/Night_Pier_color_md.jpg");
-    background-image: linear-gradient(to right bottom, rgba(89, 92, 243, 0.8), rgba(100, 199, 169, 0.8)), url("img/Night_Pier_color_md.jpg");
+    background-image: -webkit-linear-gradient(
+        to right bottom,
+        rgba(89, 92, 243, 0.8),
+        rgba(100, 199, 169, 0.8)
+      ),
+      url("img/Night_Pier_color_md.jpg");
+    background-image: -moz-linear-gradient(
+        to right bottom,
+        rgba(89, 92, 243, 0.8),
+        rgba(100, 199, 169, 0.8)
+      ),
+      url("img/Night_Pier_color_md.jpg");
+    background-image: -o-linear-gradient(
+        to right bottom,
+        rgba(89, 92, 243, 0.8),
+        rgba(100, 199, 169, 0.8)
+      ),
+      url("img/Night_Pier_color_md.jpg");
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(89, 92, 243, 0.8),
+        rgba(100, 199, 169, 0.8)
+      ),
+      url("img/Night_Pier_color_md.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -930,12 +986,32 @@ textarea:focus {
   .hero-content {
     /* max-width: 60vw; */
   }
-  
+
   .hero {
-    background-image: -webkit-linear-gradient(to right bottom, rgba(89, 92, 243, 0.8), rgba(100, 199, 169, 0.8)), url("img/Night_Pier_color.jpg");
-    background-image: -moz-linear-gradient(to right bottom, rgba(89, 92, 243, 0.8), rgba(100, 199, 169, 0.8)), url("img/Night_Pier_color.jpg");
-    background-image: -o-linear-gradient(to right bottom, rgba(89, 92, 243, 0.8), rgba(100, 199, 169, 0.8)), url("img/Night_Pier_color.jpg");
-    background-image: linear-gradient(to right bottom, rgba(89, 92, 243, 0.8), rgba(100, 199, 169, 0.8)), url("img/Night_Pier_color.jpg");
+    background-image: -webkit-linear-gradient(
+        to right bottom,
+        rgba(89, 92, 243, 0.8),
+        rgba(100, 199, 169, 0.8)
+      ),
+      url("img/Night_Pier_color.jpg");
+    background-image: -moz-linear-gradient(
+        to right bottom,
+        rgba(89, 92, 243, 0.8),
+        rgba(100, 199, 169, 0.8)
+      ),
+      url("img/Night_Pier_color.jpg");
+    background-image: -o-linear-gradient(
+        to right bottom,
+        rgba(89, 92, 243, 0.8),
+        rgba(100, 199, 169, 0.8)
+      ),
+      url("img/Night_Pier_color.jpg");
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(89, 92, 243, 0.8),
+        rgba(100, 199, 169, 0.8)
+      ),
+      url("img/Night_Pier_color.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
