@@ -741,14 +741,14 @@ textarea:focus {
   }
   
   .hero {
-    background: linear-gradient(to right bottom, var(--color-g1), var(--color-g2)),
-    url("img/Night_Pier_color_md.jpg");
+    
   background-image: linear-gradient(
       to right bottom,
       var(--color-g1),
       var(--color-g2)
     ),
     url("img/Night_Pier_color_md.jpg");
+    background-repeat: no-repeat;
   }
 
   .container {
@@ -932,10 +932,9 @@ textarea:focus {
   }
   
   .hero {
-    background: linear-gradient(to right bottom, var(--color-g1), var(--color-g2)),
-    url("img/Night_Pier_color.jpg");
     background-image: linear-gradient(to right bottom, var(--color-g1), var(--color-g2)),
     url("img/Night_Pier_color.jpg");
+    background-repeat: no-repeat;
   }
 
   .about-text p {
