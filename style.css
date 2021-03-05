@@ -163,6 +163,12 @@ p {
   min-height: 80vh;
   background: linear-gradient(to right bottom, var(--color-g1), var(--color-g2)),
     url("img/Night_Pier_color.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      var(--color-g1),
+      var(--color-g2)
+    ),
+    url("img/Night_Pier_color.jpg");
   background-size: cover;
   background-color: var(--color-grey-dk);
   color: var(--color-white);
@@ -173,7 +179,7 @@ p {
 }
 
 .hero-text {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .hero-p {
@@ -246,6 +252,14 @@ input:focus {
 .video-section {
   grid-column: center-start / center-end;
   padding-bottom: 6rem;
+}
+
+.about-text p {
+  font-size: 28px;
+  font-weight: 100;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  width: 95%;
 }
 
 .work-container {
@@ -346,18 +360,138 @@ input:focus {
 
 .black-book-p5 {
   background: url(../img/black-book_5.jpg);
-  height: 60vw;
 }
 
-.black-book-p1,
-.black-book-p2,
-.black-book-p3,
-.black-book-p4,
-.illustration-p1,
-.illustration-p2,
-.illustration-p3,
-.illustration-p4 {
-  height: 60vw;
+.architexas-p1 {
+  background: url(../img/architexas-1.jpg);
+}
+
+.architexas-p2 {
+  background: url(../img/architexas-2.jpg);
+}
+
+.architexas-p3 {
+  background: url(../img/architexas-3.jpg);
+}
+
+.architexas-p4 {
+  background: url(../img/architexas-4.jpg);
+}
+
+.cobalt-p1 {
+  background: url(../img/cobalt-1.jpg);
+}
+
+.cobalt-p2 {
+  background: url(../img/cobalt-2.jpg);
+}
+
+.cobalt-p3 {
+  background: url(../img/cobalt-3.jpg);
+}
+
+.cobalt-p4 {
+  background: url(../img/cobalt-4.jpg);
+}
+
+.harbri-p1 {
+  background: url(../img/harbri-1.jpg);
+}
+
+.harbri-p2 {
+  background: url(../img/harbri-2.jpg);
+}
+
+.harbri-p3 {
+  background: url(../img/harbri-5.jpg);
+}
+
+.harbri-p4 {
+  background: url(../img/harbri-4.jpg);
+}
+
+.omniplan-app-p1 {
+  background: url(../img/omniplan-app_5.jpg);
+}
+
+.omniplan-app-p2 {
+  background: url(../img/omniplan-app_2.jpg);
+}
+
+.omniplan-app-p3 {
+  background: url(../img/omniplan-app_3.jpg);
+}
+
+.omniplan-app-p4 {
+  background: url(../img/omniplan-app_4.jpg);
+}
+
+.omniplan-app-p5 {
+  background: url(../img/omniplan-app_1.jpg);
+}
+
+.recruiting-p1 {
+  background: url(../img/Recruiting_1.jpg);
+}
+
+.recruiting-p2 {
+  background: url(../img/Recruiting_2.jpg);
+}
+
+.recruiting-p3 {
+  background: url(../img/Recruiting_3.jpg);
+}
+
+.recruiting-p4 {
+  background: url(../img/Recruiting_4.jpg);
+}
+
+.recruiting-p5 {
+  background: url(../img/Recruiting_5.jpg);
+}
+
+.visitmobile-p1 {
+  background: url(../img/mobile-guide_1.jpg);
+}
+
+.visitmobile-p2 {
+  background: url(../img/mobile-guide_2.jpg);
+}
+
+.visitmobile-p3 {
+  background: url(../img/mobile-guide_3.jpg);
+}
+
+.visitmobile-p4 {
+  background: url(../img/mobile-guide_4.jpg);
+}
+
+.visitmobile-p5 {
+  background: url(../img/mobile-guide_5.jpg);
+}
+
+.pinehurst-p1 {
+  background: url(../img/pinehurst-guide_1.jpg);
+}
+
+.pinehurst-p2 {
+  background: url(../img/pinehurst-guide_2.jpg);
+}
+
+.pinehurst-p3 {
+  background: url(../img/pinehurst-guide_3.jpg);
+}
+
+.pinehurst-p4 {
+  background: url(../img/pinehurst-guide_4.jpg);
+}
+
+.pinehurst-p5 {
+  background: url(../img/pinehurst-guide_5.jpg);
+}
+
+.pinehurst-p6 {
+  background: url(../img/pinehurst-guide_6.jpg);
 }
 
 .illustration-p1 {
@@ -387,7 +521,9 @@ input:focus {
 .p2,
 .p3,
 .p4,
-.p5 {
+.p5,
+.p6 {
+  height: 60vw;
   display: inline-block;
   width: 100%;
   background-size: cover;
@@ -398,13 +534,15 @@ input:focus {
   grid-template-columns: 1fr;
 }
 
-.pg-5 {
+.pg-5,
+.pg-6 {
   grid-template-areas:
     "img1"
     "img2"
     "img3"
     "img4"
-    "img5";
+    "img5"
+    "img6";
 }
 
 .p1 {
@@ -425,6 +563,10 @@ input:focus {
 
 .p5 {
   grid-area: img5;
+}
+
+.p6 {
+  grid-area: img6;
 }
 
 .video {
@@ -606,8 +748,9 @@ textarea:focus {
       [center-end]minmax(6rem, 1fr) [full-end];
   }
 
-  .about-text {
-    width: 50%;
+  .about-text p {
+    font-size: 32px;
+    width: 100%;
   }
 
   .work-container {
@@ -637,19 +780,30 @@ textarea:focus {
       "img5 img5";
   }
 
-  .black-book-p5 {
+  .pg-6 {
+    grid-template-columns: unset;
+    grid-template-areas:
+      "img1 img1 img1 img2 img2 img2"
+      "img3 img3 img4 img4 img5 img5"
+      "img6 img6 img6 img6 img6 img6";
+  }
+
+  .p1,
+  .p2,
+  .p3,
+  .p4 {
+    height: 30vw;
+  }
+
+  .p5,
+  .p6 {
     height: 40vw;
   }
 
-  .black-book-p1,
-  .black-book-p2,
-  .black-book-p3,
-  .black-book-p4,
-  .illustration-p1,
-  .illustration-p2,
-  .illustration-p3,
-  .illustration-p4 {
-    height: 30vw;
+  .pinehurst-p3,
+  .pinehurst-p4,
+  .pinehurst-p5 {
+    height: 20vw;
   }
 
   .video {
@@ -720,13 +874,13 @@ textarea:focus {
   }
 
   .hero-text {
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
   }
 
   .hero-content,
   .project-hero-content {
     grid-column: center-start / center-end;
-    max-width: 60vw;
+    max-width: 55vw;
     padding: 16rem 0rem 10rem 0rem;
   }
 
@@ -737,6 +891,7 @@ textarea:focus {
 
   .project-hero-content {
     padding-top: 10rem;
+    max-width: 55vw;
   }
 
   .email-capture {
@@ -767,6 +922,11 @@ textarea:focus {
     /* max-width: 60vw; */
   }
 
+  .about-text p {
+    font-size: 36px;
+    width: 85%;
+  }
+
   .contact {
     display: grid;
     grid-template-columns: 1fr repeat(10, 11.4rem) 1fr;
@@ -794,5 +954,8 @@ textarea:focus {
 @media screen and (min-width: 1600px) {
   .video {
     height: 80rem;
+  }
+  .project-hero-content {
+    max-width: 40vw;
   }
 }
