@@ -161,6 +161,12 @@ p {
 
 .hero {
   min-height: 80vh;
+  -webkit-background-image: linear-gradient(
+      to right bottom,
+      var(--color-g1),
+      var(--color-g2)
+    ),
+    url("img/Night_Pier_color_small.jpg");
   background-image: linear-gradient(
       to right bottom,
       var(--color-g1),
@@ -742,8 +748,13 @@ textarea:focus {
   }
   
   .hero {
-    
-  background-image: linear-gradient(
+    -webkit-background-image: linear-gradient(
+      to right bottom,
+      var(--color-g1),
+      var(--color-g2)
+    ),
+    url("img/Night_Pier_color_md.jpg");
+    background-image: linear-gradient(
       to right bottom,
       var(--color-g1),
       var(--color-g2)
@@ -934,6 +945,8 @@ textarea:focus {
   }
   
   .hero {
+    -webkit-background-image: linear-gradient(to right bottom, var(--color-g1), var(--color-g2)),
+    url("img/Night_Pier_color.jpg");
     background-image: linear-gradient(to right bottom, var(--color-g1), var(--color-g2)),
     url("img/Night_Pier_color.jpg");
     background-size: cover;
