@@ -263,6 +263,7 @@ input:focus {
 .work-container {
   display: grid;
   grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
 }
 
 .work-container img,
@@ -282,7 +283,7 @@ input:focus {
 
 .other-work-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
 }
 
