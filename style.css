@@ -161,8 +161,6 @@ p {
 
 .hero {
   min-height: 80vh;
-  background: linear-gradient(to right bottom, var(--color-g1), var(--color-g2)),
-    url("img/Night_Pier_color_small.jpg");
   background-image: linear-gradient(
       to right bottom,
       var(--color-g1),
@@ -170,6 +168,7 @@ p {
     ),
     url("img/Night_Pier_color_small.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   color: var(--color-white);
   display: flex;
   flex-direction: column;
