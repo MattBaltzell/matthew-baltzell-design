@@ -170,7 +170,6 @@ p {
     ),
     url("img/Night_Pier_color_small.jpg");
   background-size: cover;
-  background-color: var(--color-grey-dk);
   color: var(--color-white);
   display: flex;
   flex-direction: column;
