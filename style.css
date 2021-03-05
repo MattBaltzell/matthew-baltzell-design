@@ -162,16 +162,8 @@ p {
 .hero {
   min-height: 80vh;
   background-color: #dddddd;
-  background-image: -webkit-linear-gradient(
-      to right bottom,
-      var(--color-g1),
-      var(--color-g2)
-    ), url("img/Night_Pier_color_small.jpg");
-  background-image: linear-gradient(
-      to right bottom,
-      var(--color-g1),
-      var(--color-g2)
-    ), url("img/Night_Pier_color_small.jpg");
+  background-image: -webkit-linear-gradient(to right bottom, rgba(89, 92, 243, 0.8), rgba(100, 199, 169, 0.8)), url("img/Night_Pier_color_small.jpg");
+  background-image: linear-gradient(to right bottom, rgba(89, 92, 243, 0.8), rgba(100, 199, 169, 0.8)), url("img/Night_Pier_color_small.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
