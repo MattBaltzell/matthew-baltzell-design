@@ -162,16 +162,16 @@ p {
 .hero {
   min-height: 80vh;
   background-color: #dddddd;
-  background-image: url("img/Night_Pier_color_small.jpg"), -webkit-linear-gradient(
+  background-image: -webkit-linear-gradient(
       to right bottom,
       var(--color-g1),
       var(--color-g2)
-    );
-  background-image: url("img/Night_Pier_color_small.jpg"), linear-gradient(
+    ), url("img/Night_Pier_color_small.jpg");
+  background-image: linear-gradient(
       to right bottom,
       var(--color-g1),
       var(--color-g2)
-    );
+    ), url("img/Night_Pier_color_small.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -749,16 +749,16 @@ textarea:focus {
   }
   
   .hero {
-    background-image: url("img/Night_Pier_color_md.jpg"), -webkit-linear-gradient(
+    background-image: -webkit-linear-gradient(
       to right bottom,
       var(--color-g1),
       var(--color-g2)
-    );
-    background-image: url("img/Night_Pier_color_md.jpg"), linear-gradient(
+    ) url("img/Night_Pier_color_md.jpg");
+    background-image: linear-gradient(
       to right bottom,
       var(--color-g1),
       var(--color-g2)
-    );
+    ), url("img/Night_Pier_color_md.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -946,16 +946,16 @@ textarea:focus {
   }
   
   .hero {
-    background-image: url("img/Night_Pier_color.jpg"), -webkit-linear-gradient(
+    background-image: -webkit-linear-gradient(
       to right bottom,
       var(--color-g1),
       var(--color-g2)
-    );
-    background-image: url("img/Night_Pier_color.jpg"), linear-gradient(
+    ), url("img/Night_Pier_color.jpg");
+    background-image: linear-gradient(
       to right bottom,
       var(--color-g1),
       var(--color-g2)
-    );
+    ), url("img/Night_Pier_color.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
