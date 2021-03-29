@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vacay Timer!!!</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: sans-serif;
+      }
+
+      .page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url("unico.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 4px;
+        padding: 60px 60px 20px 60px;
+        color: #303952;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        transform: scale(1.8);
+        text-align: center;
+      }
+
+      .heading {
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 24px;
+        margin-bottom: -20px;
+      }
+
+      .days-left {
+        font-weight: 900;
+        font-size: 300px;
+        margin-bottom: -20px;
+      }
+
+      @media screen and (max-width: 800px) {
+        .container {
+          transform: scale(1.3);
+        }
+      }
+      @media screen and (max-width: 540px) {
+        .container {
+          transform: scale(0.8);
+          max-width: 100vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="page">
+      <div class="container">
+        <p class="heading">Days Until Mexico Vacation:</p>
+        <p class="days-left"></p>
+      </div>
+    </section>
+    <script>
+      var today = new Date();
+      var vacay = new Date("June 25, 2021"); // Set day and month
+      vacay.setFullYear(today.getFullYear()); // Set year to this year
+      var msPerDay = 24 * 60 * 60 * 1000; // Number of milliseconds per day
+      var daysLeft = (vacay.getTime() - today.getTime()) / msPerDay;
+      var daysLeft = Math.round(daysLeft); //returns days left in the year
+
+      document.querySelector(".days-left").innerHTML = `${daysLeft}`;
+    </script>
+  </body>
+</html>
