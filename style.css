@@ -78,7 +78,11 @@ p {
 
 a.link-wht, a.link-wht:active, a.link-wht:visited {
   color: var(--color-white);
+  color: var(--color-white);
+  display: inline-block;
+  margin-top: 10px;
 }
+
 
 a.link-wht:hover{
   color: var(--color-grey-lt);
