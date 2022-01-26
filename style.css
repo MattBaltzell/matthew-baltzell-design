@@ -1,7 +1,8 @@
 :root {
   /* Color Variables */
-  --color-grey-dk: #252930;
-  --color-grey-lt: #eee;
+  --color-bg: rgb(39, 39, 44); 
+  --color-grey-dk: rgb(71, 71, 75)  ;
+  --color-grey-lt: #ddd;
   --color-white: #fff;
   --color-primary-lt: #595cf32c;
   --color-primary: #595cf3;
@@ -28,7 +29,7 @@ a.anchor {
 
 html {
   font-family: "proxima-nova", sans-serif;
-  color: var(--color-grey-dk);
+  color: var(--color-grey-lt);
   font-size: 62.5%;
   width: 100%;
   scroll-behavior: smooth;
@@ -38,6 +39,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.4;
   position: relative;
+  background-color: var(--color-bg)
 }
 
 .heading-1 {
@@ -129,16 +131,18 @@ a.link-wht:hover{
 .nav {
   height: 8rem;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: var(--color-bg);
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   padding: 0 4rem;
   position: fixed;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--color-grey-dk);
   font-size: 1.6rem;
   z-index: 1000;
+  top: 0;
+  left: 0;
 }
 
 .nav-logo {
@@ -162,7 +166,7 @@ a.link-wht:hover{
 .nav-links a:link,
 .nav-links a:visited {
   text-decoration: none;
-  color: var(--color-grey-dk);
+  color: var(--color-grey-lt);
   transition: all 0.2s;
 }
 
@@ -265,24 +269,28 @@ input:focus {
 }
 
 .about,
+.dev,
 .work,
 .project-gallery,
 .cta,
 .video-section {
-  border-bottom: 1px solid var(--color-grey-lt);
+  border-bottom: 1px solid var(--color-grey-dk);
 }
 
-.work {
-  margin-top: 6rem;
+.work,.dev {
+  margin-top: 7rem;
 }
 
 .about,
+.dev,
 .work,
 .project-gallery,
 .video-section {
   grid-column: center-start / center-end;
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
 }
+
+.about {padding-top: 10rem;}
 
 .about-text p {
   font-size: 28px;
@@ -292,13 +300,19 @@ input:focus {
   width: 95%;
 }
 
-.work-container {
+.dev-container {
+  display:flex;
+  flex-direction: column;
+}
+
+.work-container{
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
 }
 
 .work-container img,
+.dev-container img,
 .other-work-container img {
   width: 100%;
   height: 100%;
@@ -307,6 +321,7 @@ input:focus {
 }
 
 .work-container img:hover,
+.dev-container img:hover,
 .other-work-container img:hover {
   filter: brightness(1.2);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
@@ -652,12 +667,11 @@ input:focus {
 
 .contact {
   grid-column: full-start / full-end;
-  padding: 3rem 2rem;
+  padding: 8rem 2rem;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-grey-dk);
 }
 
 .hidden {
@@ -752,7 +766,7 @@ textarea:focus {
 } */
 
 .footer {
-  background-color: var(--color-grey-dk);
+  background-color: var(--color-secondary);
   color: var(--color-white);
   height: 6rem;
   display: flex;
@@ -965,11 +979,20 @@ textarea:focus {
 
 /* Large Tablet / Notebook  */
 @media screen and (min-width: 1025px) {
-  .heading-1,
+  .heading-1{
+    font-size:5.2rem;
+    max-width: 35ch;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
   .project-hero .heading-1 {
     font-size: 9rem;
     margin-bottom: 2rem;
   }
+
+
 
   .container,
   .hero,
@@ -1069,8 +1092,8 @@ textarea:focus {
   }
 
   .about-text p {
-    font-size: 36px;
-    width: 85%;
+    font-size: 2.4rem;
+    max-width: 70ch;
   }
 
   .contact {
