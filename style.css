@@ -1,7 +1,8 @@
 :root {
   /* Color Variables */
-  --color-bg: rgb(39, 39, 44); 
-  --color-grey-dk: rgb(71, 71, 75)  ;
+  --color-bg: rgb(39, 39, 44);
+  --color-grey-dk: rgb(71, 71, 75);
+  --color-grey-md: rgb(164, 164, 168);
   --color-grey-lt: #ddd;
   --color-white: #fff;
   --color-primary-lt: #595cf32c;
@@ -28,7 +29,7 @@ a.anchor {
 }
 
 html {
-  font-family: "proxima-nova", sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   color: var(--color-grey-lt);
   /* font-size: 62.5%; */
   font-size: 58%;
@@ -40,11 +41,8 @@ body {
   font-size: 1.8rem;
   line-height: 1.4;
   position: relative;
-  background-color: var(--color-bg)
+  background-color: var(--color-bg);
 }
-
-
-
 
 .heading-1 {
   font-size: 4.8rem;
@@ -58,17 +56,19 @@ body {
   text-align: center;
 }
 
-.heading-1__span{
-  font-size:1.3rem;
+.heading-1__span {
+  font-size: 1.3rem;
   font-weight: 100;
   margin-left: 2px;
-  display:block;    
+  display: block;
   margin-bottom: -4.3rem;
 }
 
 .heading-2 {
   font-size: 2.4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
+  text-align: center;
+  font-weight: 100;
 }
 
 .heading-3 {
@@ -98,23 +98,26 @@ p {
   margin-bottom: 1.6rem;
 }
 
-a, a:active, a:visited{
+a,
+a:active,
+a:visited {
   color: var(--color-grey-lt);
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-a:hover{
-  color: var(--color-secondary)
+a:hover {
+  color: var(--color-secondary);
 }
 
-a.link-wht, a.link-wht:active, a.link-wht:visited {
+a.link-wht,
+a.link-wht:active,
+a.link-wht:visited {
   color: var(--color-white);
   display: inline-block;
   margin-top: 10px;
 }
 
-
-a.link-wht:hover{
+a.link-wht:hover {
   color: var(--color-grey-lt);
 }
 
@@ -165,7 +168,7 @@ a.link-wht:hover{
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  padding: 0 4rem;
+  padding: 5rem 4rem;
   border-bottom: 1px solid var(--color-grey-dk);
   font-size: 1.4rem;
   z-index: 1000;
@@ -175,8 +178,8 @@ a.link-wht:hover{
 
 .nav-logo {
   width: 31rem;
-  margin-top: 2.4rem;
-  margin-bottom: 1.0rem;
+  margin-top: 2.6rem;
+  margin-bottom: 2rem;
 }
 
 .nav-links {
@@ -184,7 +187,7 @@ a.link-wht:hover{
   flex-flow: row nowrap;
   list-style: none;
   gap: 2rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .nav-links a,
@@ -237,7 +240,8 @@ input:focus {
   border-bottom: 1px solid var(--color-grey-dk);
 }
 
-.work,.dev {
+.work,
+.dev {
   margin-top: 5.4rem;
 }
 
@@ -250,7 +254,13 @@ input:focus {
   padding-bottom: 6rem;
 }
 
-.about {padding-top: 3.4rem;}
+.dev {
+  padding-bottom: 3rem;
+}
+
+.about {
+  padding-top: 3.4rem;
+}
 
 .about-text p {
   font-size: 1.9rem;
@@ -261,16 +271,53 @@ input:focus {
 }
 
 .dev-container {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
-.dev-container img{
+.dev-container img {
   aspect-ratio: 16/9;
   object-fit: cover;
+  margin-bottom: 1.2rem;
 }
 
-.work-container{
+.project-text {
+  padding-bottom: 4rem;
+}
+
+.project-text a {
+  text-decoration: none;
+}
+
+.project-text details {
+  max-width: 300px;
+}
+
+.project-text details summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.project-text details .project-p {
+  margin-top: 1rem;
+  padding-left: 1.4rem;
+  border-left: 1px solid var(--color-grey-dk);
+  color: var(--color-grey-md);
+  transform: translateY(-30px);
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+
+.project-text details .slide-in {
+  transform: translateY(0);
+  opacity: 1 !important;
+}
+
+.project-p {
+  margin-bottom: 0.6rem;
+}
+
+.work-container {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
@@ -349,18 +396,38 @@ input:focus {
   border-radius: 3px;
 }
 
-.project-img {width: 100%}
+.project-img {
+  width: 100%;
+}
 
-.black-book-p1 {background: url(../img/black-book_1.jpg)}
-.black-book-p2 {background: url(../img/black-book_2.jpg)}
-.black-book-p3 {background: url(../img/black-book_3.jpg)}
-.black-book-p4 {background: url(../img/black-book_4.jpg)}
-.black-book-p5 {background: url(../img/black-book_5.jpg)}
+.black-book-p1 {
+  background: url(../img/black-book_1.jpg);
+}
+.black-book-p2 {
+  background: url(../img/black-book_2.jpg);
+}
+.black-book-p3 {
+  background: url(../img/black-book_3.jpg);
+}
+.black-book-p4 {
+  background: url(../img/black-book_4.jpg);
+}
+.black-book-p5 {
+  background: url(../img/black-book_5.jpg);
+}
 
-.architexas-p1 {background: url(../img/architexas-1.jpg)}
-.architexas-p2 {background: url(../img/architexas-2.jpg)}
-.architexas-p3 {background: url(../img/architexas-3.jpg)}
-.architexas-p4 {background: url(../img/architexas-4.jpg)}
+.architexas-p1 {
+  background: url(../img/architexas-1.jpg);
+}
+.architexas-p2 {
+  background: url(../img/architexas-2.jpg);
+}
+.architexas-p3 {
+  background: url(../img/architexas-3.jpg);
+}
+.architexas-p4 {
+  background: url(../img/architexas-4.jpg);
+}
 
 .cobalt-p1 {
   background: url(../img/cobalt-1.jpg);
@@ -527,7 +594,13 @@ input:focus {
   height: 60vw;
 }
 
-.p1,.p2,.p3,.p4,.p5,.p6,.p7 {
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.p7 {
   height: 60vw;
   display: inline-block;
   width: 100%;
@@ -535,19 +608,21 @@ input:focus {
   background-position: center;
 }
 
-.pg-3 {grid-template-columns: 1fr}
+.pg-3 {
+  grid-template-columns: 1fr;
+}
 
 .pg-5,
 .pg-6,
 .pg-7 {
   grid-template-areas:
-    "img1"
-    "img2"
-    "img3"
-    "img4"
-    "img5"
-    "img6"
-    "img7";
+    'img1'
+    'img2'
+    'img3'
+    'img4'
+    'img5'
+    'img6'
+    'img7';
 }
 
 .p1 {
@@ -756,25 +831,25 @@ textarea:focus {
         rgba(89, 92, 243, 0.8),
         rgba(100, 199, 169, 0.8)
       ),
-      url("img/Night_Pier_color_md.jpg");
+      url('img/Night_Pier_color_md.jpg');
     background-image: -moz-linear-gradient(
         to right bottom,
         rgba(89, 92, 243, 0.8),
         rgba(100, 199, 169, 0.8)
       ),
-      url("img/Night_Pier_color_md.jpg");
+      url('img/Night_Pier_color_md.jpg');
     background-image: -o-linear-gradient(
         to right bottom,
         rgba(89, 92, 243, 0.8),
         rgba(100, 199, 169, 0.8)
       ),
-      url("img/Night_Pier_color_md.jpg");
+      url('img/Night_Pier_color_md.jpg');
     background-image: linear-gradient(
         to right bottom,
         rgba(89, 92, 243, 0.8),
         rgba(100, 199, 169, 0.8)
       ),
-      url("img/Night_Pier_color_md.jpg");
+      url('img/Night_Pier_color_md.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -813,25 +888,25 @@ textarea:focus {
 
   .pg-5 {
     grid-template-areas:
-      "img1 img2"
-      "img3 img4"
-      "img5 img5";
+      'img1 img2'
+      'img3 img4'
+      'img5 img5';
   }
 
   .pg-6 {
     grid-template-columns: unset;
     grid-template-areas:
-      "img1 img1 img1 img2 img2 img2"
-      "img3 img3 img4 img4 img5 img5"
-      "img6 img6 img6 img6 img6 img6";
+      'img1 img1 img1 img2 img2 img2'
+      'img3 img3 img4 img4 img5 img5'
+      'img6 img6 img6 img6 img6 img6';
   }
 
   .pg-7 {
     grid-template-columns: unset;
     grid-template-areas:
-      "img1 img1 img1 img2 img2 img2"
-      "img3 img3 img4 img4 img5 img5"
-      "img6 img6 img6 img7 img7 img7";
+      'img1 img1 img1 img2 img2 img2'
+      'img3 img3 img4 img4 img5 img5'
+      'img6 img6 img6 img7 img7 img7';
   }
 
   .pg-7 .p1,
@@ -909,15 +984,14 @@ textarea:focus {
 
 /* Large Tablet / Notebook  */
 @media screen and (min-width: 1025px) {
-  .heading-1{
-    font-size:18rem;
+  .heading-1 {
+    font-size: 18rem;
     margin-left: -8px;
     margin-bottom: 2rem;
-
   }
 
-  .heading-1__span{
-    font-size:3rem;
+  .heading-1__span {
+    font-size: 3rem;
     margin-left: 8px;
     margin-bottom: -17.3rem;
   }
@@ -926,8 +1000,6 @@ textarea:focus {
     font-size: 9rem;
     margin-bottom: 2rem;
   }
-
-
 
   .container,
   .hero,
@@ -1001,25 +1073,25 @@ textarea:focus {
         rgba(89, 92, 243, 0.8),
         rgba(100, 199, 169, 0.8)
       ),
-      url("img/Night_Pier_color.jpg");
+      url('img/Night_Pier_color.jpg');
     background-image: -moz-linear-gradient(
         to right bottom,
         rgba(89, 92, 243, 0.8),
         rgba(100, 199, 169, 0.8)
       ),
-      url("img/Night_Pier_color.jpg");
+      url('img/Night_Pier_color.jpg');
     background-image: -o-linear-gradient(
         to right bottom,
         rgba(89, 92, 243, 0.8),
         rgba(100, 199, 169, 0.8)
       ),
-      url("img/Night_Pier_color.jpg");
+      url('img/Night_Pier_color.jpg');
     background-image: linear-gradient(
         to right bottom,
         rgba(89, 92, 243, 0.8),
         rgba(100, 199, 169, 0.8)
       ),
-      url("img/Night_Pier_color.jpg");
+      url('img/Night_Pier_color.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
