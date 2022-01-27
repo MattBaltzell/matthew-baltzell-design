@@ -65,19 +65,20 @@ body {
 }
 
 .heading-2 {
-  font-size: 2.4rem;
-  margin-bottom: 1.4rem;
+  font-size: 1.6rem;
+  margin-bottom: 5rem;
   text-align: center;
-  font-weight: 100;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
 }
 
 .heading-3 {
   font-size: 2.4rem;
-  line-height: 1.2;
+  line-height: 1.1;
   text-transform: uppercase;
   font-weight: 800;
   color: var(--color-grey-lt);
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
 }
 
 .form .heading-3 {
@@ -199,7 +200,8 @@ a.link-wht:hover {
 }
 
 .nav-links a:hover,
-.nav-links a:active {
+.nav-links a:active,
+summary:hover {
   color: var(--color-secondary);
 }
 
@@ -278,7 +280,13 @@ input:focus {
 .dev-container img {
   aspect-ratio: 16/9;
   object-fit: cover;
-  margin-bottom: 1.2rem;
+  object-position: top;
+  margin-bottom: 1rem;
+}
+
+.project-image img {
+  box-shadow: 0 0px 3rem rgba(255, 255, 255, 0.05);
+  /* border: 1px solid var(--color-secondary); */
 }
 
 .project-text {
@@ -314,7 +322,7 @@ input:focus {
 }
 
 .project-p {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.4rem;
 }
 
 .work-container {
@@ -333,7 +341,7 @@ input:focus {
 }
 
 .work-container img:hover,
-.dev-container img:hover,
+/* .dev-container img:hover, */
 .other-work-container img:hover {
   filter: brightness(1.2);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
@@ -771,7 +779,7 @@ textarea:focus {
 } */
 
 .footer {
-  background-color: var(--color-secondary);
+  /* background-color: var(--color-secondary); */
   color: var(--color-white);
   height: 6rem;
   display: flex;
@@ -806,21 +814,6 @@ textarea:focus {
 
 /* Tablet */
 @media screen and (min-width: 450px) {
-  .nav {
-    flex-flow: row nowrap;
-    justify-content: space-between;
-  }
-
-  .nav-logo {
-    width: 35rem;
-    margin-top: 0.4rem;
-    margin-bottom: 0;
-  }
-
-  .nav-links {
-    transform: translateX(0);
-  }
-
   .cta {
     height: 20rem;
   }
@@ -857,13 +850,35 @@ textarea:focus {
 
   .container {
     grid-template-columns:
-      [full-start]minmax(6rem, 1fr) [center-start]repeat(10, 1fr)
-      [center-end]minmax(6rem, 1fr) [full-end];
+      [full-start]minmax(1fr, 3rem) [center-start]repeat(10, 1fr)
+      [center-end]minmax(1fr, 3rem) [full-end];
+  }
+
+  .heading-1 {
+    text-align: left;
+    font-size: 7rem;
+  }
+
+  .heading-1__span {
+    font-size: 1.6rem;
+    margin-bottom: -6rem;
+  }
+
+  .heading-2 {
+    text-align: left;
+  }
+
+  .heading-3 {
+    font-size: 3.6rem;
   }
 
   .about-text p {
-    font-size: 32px;
+    font-size: 2rem;
     width: 100%;
+  }
+
+  .project-text {
+    padding-bottom: 5rem;
   }
 
   .work-container {
@@ -947,10 +962,40 @@ textarea:focus {
 }
 
 @media screen and (min-width: 600px) {
+  .nav {
+    position: fixed;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    width: 35rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+  }
+
+  .nav-links {
+    transform: translateX(0);
+  }
+
   .form-container {
     margin: 0 3rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
   }
+
+  .heading-1 {
+    font-size: 11rem;
+  }
+
+  .heading-1__span {
+    font-size: 2.2rem;
+    margin-bottom: -10.4rem;
+  }
+
+  .heading-3 {
+    max-width: 22ch;
+  }
+
   .hero {
     min-height: 60vh;
   }
@@ -958,6 +1003,11 @@ textarea:focus {
   .hero-content {
     padding: 16rem 6rem 10rem 6rem;
   }
+
+  section.about {
+    padding-top: 14rem;
+  }
+
   .project-hero .heading-1 {
     font-size: 6rem;
   }
@@ -969,12 +1019,35 @@ textarea:focus {
 }
 
 @media screen and (min-width: 780px) {
+  html {
+    font-size: 62.5%;
+  }
+
   .hero-content {
     padding: 16rem 8rem 10rem 8rem;
   }
   .project-hero {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .dev-project {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .dev-project .project-image {
+    width: 75%;
+    height: 75%;
+  }
+
+  .dev-project .project-text {
+    width: 25%;
+  }
+
+  .heading-3 {
+    font-size: 2rem;
   }
 
   .pg-3 {
@@ -985,7 +1058,7 @@ textarea:focus {
 /* Large Tablet / Notebook  */
 @media screen and (min-width: 1025px) {
   .heading-1 {
-    font-size: 18rem;
+    font-size: 14rem;
     margin-left: -8px;
     margin-bottom: 2rem;
   }
@@ -993,7 +1066,7 @@ textarea:focus {
   .heading-1__span {
     font-size: 3rem;
     margin-left: 8px;
-    margin-bottom: -17.3rem;
+    margin-bottom: -14rem;
   }
 
   .project-hero .heading-1 {
@@ -1006,8 +1079,8 @@ textarea:focus {
   .project-hero {
     display: grid;
     grid-template-columns:
-      [full-start]minmax(6rem, 1fr) [center-start]repeat(7, 1fr)
-      [center-end]minmax(6rem, 1fr) [full-end];
+      [full-start]minmax(6vw, 6rem) [center-start]repeat(7, 1fr)
+      [center-end]minmax(6vw, 6rem) [full-end];
   }
 
   .hero {
@@ -1098,8 +1171,38 @@ textarea:focus {
     background-repeat: no-repeat;
   }
 
-  .about-text p {
+  .container,
+  .hero,
+  .project-hero {
+    display: grid;
+    grid-template-columns:
+      [full-start]minmax(10vw, 10rem) [center-start]repeat(7, 1fr)
+      [center-end]minmax(10vw, 10rem) [full-end];
+  }
+
+  .heading-1 {
+    font-size: 16rem;
+  }
+
+  .heading-1__span {
+    margin-bottom: -16rem;
+  }
+
+  .heading-3 {
     font-size: 1.6rem;
+  }
+
+  .dev-project .project-image {
+    width: 85%;
+    height: 85%;
+  }
+
+  .dev-project .project-text {
+    width: 15%;
+  }
+
+  .about-text p {
+    font-size: 2rem;
     max-width: 86ch;
   }
 
@@ -1120,8 +1223,13 @@ textarea:focus {
   .contact-image {
     display: block;
     width: 90rem;
-    grid-column-start: 5;
+    height: 65rem;
+    border-radius: 3px;
+    object-fit: cover;
+    object-position: top left;
+    grid-column-start: 4;
   }
+
   .video {
     height: 70rem;
   }
