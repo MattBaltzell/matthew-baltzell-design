@@ -391,7 +391,7 @@ input:focus {
 
 .project-hero .heading-1 {
   font-size: 3.8rem;
-  text-align:left;
+  text-align: left;
 }
 
 .project-gallery {
@@ -708,7 +708,7 @@ input:focus {
 
 .form label {
   margin: 2rem 0 1rem 0;
-  color: var(--color-grey-md)
+  color: var(--color-grey-md);
 }
 
 .form input,
@@ -1041,7 +1041,6 @@ textarea:focus {
   .project-hero {
     padding-left: 8rem;
     padding-right: 8rem;
-    
   }
 
   .dev-project {
@@ -1149,10 +1148,6 @@ textarea:focus {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero-content {
-    /* max-width: 60vw; */
-  }
-
   .hero {
     background-image: -webkit-linear-gradient(
         to right bottom,
