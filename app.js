@@ -1,5 +1,6 @@
 const devContainer = document.querySelector('.dev-container');
 
+// Animate details paragraph in
 devContainer.addEventListener('click', function (e) {
   if (e.target.classList.contains('details')) {
     const details = e.target.parentElement;
