@@ -325,6 +325,10 @@ input:focus {
   margin-bottom: 0.4rem;
 }
 
+p.project-p--long {
+  font-size: 1.4rem;
+}
+
 .work-container {
   display: grid;
   grid-gap: 1rem;
