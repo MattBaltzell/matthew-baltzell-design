@@ -141,11 +141,6 @@ a.link-wht:hover {
   transform: translateY(-0.2rem);
 }
 
-/* .hero-btn {
-  max-width: 35vw;
-  margin-top: 2rem;
-} */
-
 .cta {
   grid-column: center-start / center-end;
   height: 28rem;
@@ -340,7 +335,6 @@ p.project-p--long {
 }
 
 .work-container img:hover,
-/* .dev-container img:hover, */
 .other-work-container img:hover {
   filter: brightness(1.2);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
@@ -370,12 +364,11 @@ p.project-p--long {
 }
 
 .project-hero {
-  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6rem 3rem 4rem 3rem;
+  padding: 6rem 3rem 2rem 3rem;
   color: var(--color-white);
 }
 
@@ -384,7 +377,7 @@ p.project-p--long {
 }
 
 .project-hero .heading-1 {
-  font-size: 3.8rem;
+  font-size: 4.2rem;
   text-align: left;
 }
 
@@ -401,6 +394,7 @@ p.project-p--long {
 
 .project-img {
   width: 100%;
+  height: 100%;
 }
 
 .black-book-p1 {
@@ -765,15 +759,6 @@ textarea:focus {
   display: none;
 }
 
-/* .contact-logo {
-  width: 24rem;
-  margin: 3rem auto -4rem auto;
-}
-
-.contact-logo img {
-  width: 100%;
-} */
-
 .footer {
   /* background-color: var(--color-secondary); */
   color: var(--color-white);
@@ -1032,10 +1017,6 @@ textarea:focus {
   .hero-content {
     padding: 16rem 8rem 10rem 8rem;
   }
-  .project-hero {
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
 
   .dev-project {
     display: flex;
@@ -1083,7 +1064,7 @@ textarea:focus {
   }
 
   .project-hero .heading-1 {
-    font-size: 9rem;
+    /* font-size: 6rem; */
     margin-bottom: 2rem;
   }
 
@@ -1111,7 +1092,7 @@ textarea:focus {
   .hero-content,
   .project-hero-content {
     grid-column: center-start / center-end;
-    max-width: 55vw;
+    max-width: 80%;
     padding: 16rem 0rem 10rem 0rem;
   }
 
@@ -1121,8 +1102,8 @@ textarea:focus {
   }
 
   .project-hero-content {
-    padding-top: 10rem;
-    max-width: 55vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .email-capture {
@@ -1207,6 +1188,11 @@ textarea:focus {
     margin-bottom: 3rem;
   }
 
+  .hero-content,
+  .project-hero-content {
+    max-width: 70%;
+  }
+
   .dev-project .project-image {
     width: 85%;
     height: 85%;
@@ -1261,6 +1247,6 @@ textarea:focus {
   }
 
   .project-hero-content {
-    max-width: 40vw;
+    max-width: 50%;
   }
 }
