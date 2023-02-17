@@ -371,11 +371,6 @@ p.project-p--long {
 
 .project-hero {
   min-height: 50vh;
-  background: linear-gradient(
-    to right bottom,
-    var(--color-primary),
-    var(--color-secondary)
-  );
   display: flex;
   flex-direction: column;
   align-items: center;
